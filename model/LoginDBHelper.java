@@ -7,21 +7,26 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
+//importing PasswordUtils.java file for hashing passwords;
+import com.example.cs360_projectthree.util.PasswordUtils;
+
 public class LoginDBHelper extends SQLiteOpenHelper {
 
     // Naming the SQLite .db file
     public static final String DBNAME = "Login.db";
+    // Setting the database version
+    private static final int DATABASE_VERSION = 2;
 
     // initializing the database with the DBNAME and version #
     public LoginDBHelper(@Nullable Context context) {
-        super(context, DBNAME, null, 1);
+        super(context, DBNAME, null, DATABASE_VERSION);
     }
 
-    // Called when the database is first created
-    // Creates the "users" table with username as the primary key and password as a field
+    // This function is called when the database is first created
+    // Creates the "users" table with username as primary key, password hash, and salt
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE users(username TEXT PRIMARY KEY, password TEXT)");
+        db.execSQL("CREATE TABLE users(username TEXT PRIMARY KEY, password TEXT, salt TEXT)");
     }
 
     // Called when the database version changes
@@ -32,17 +37,24 @@ public class LoginDBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    // Inserts a new user into the database
-    // Returns true if insertion is successful, otherwise false
+    // Inserts a new user into the database with PBKDF2-HMAC-SHA512 password hashing
+    // Returns true if insertion is successful, false if insertion fails
     public boolean insertData(String username, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        // Store username and password into key-value pairs
-        values.put("username", username);
-        values.put("password", password);
+        // Generate a random salt for the user
+        byte[] salt = PasswordUtils.generateSalt();
+        // Hash the password using PBKDF2-HMAC-SHA512 with the salt
+        String hashedPasswordHex = PasswordUtils.hashPasswordHex(password, salt);
+        String saltHex = PasswordUtils.bytesToHex(salt);
 
-        // Insert data into "users" table
+        // Store username, hashed password, and salt into the db as key-value pairs
+        values.put("username", username);
+        values.put("password", hashedPasswordHex);
+        values.put("salt", saltHex);
+
+        // Insert data into the "users" table
         long result = db.insert("users", null, values);
 
         // If result is -1, insertion failed
@@ -50,7 +62,7 @@ public class LoginDBHelper extends SQLiteOpenHelper {
     }
 
     // Checks if a username already exists in the database
-    // Returns true if the username is found, false otherwise
+    // Returns true if the username is found. Otherwise, false
     public boolean checkUsername(String username) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -60,33 +72,45 @@ public class LoginDBHelper extends SQLiteOpenHelper {
                 new String[]{username}
         );
 
-        // If cursor count > 0, username exists
+        // If cursor count > 0, the username exists
         boolean exists = cursor.getCount() > 0;
 
-        // Always close cursor to prevent memory leaks
+        // Closing the cursor
         cursor.close();
 
         return exists;
     }
 
-    // LOGIN AUTHENTICATION
-    // Verifies that both username and password match a record in the database
+    // -----LOGIN AUTHENTICATION-----
+    // Verifies credentials using PBKDF2-HMAC-SHA512 hash, then compares it to the stored password hash and salt
     // Returns true if credentials are valid, otherwise false
     public boolean checkUsernamePassword(String username, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
 
-        // Query database for matching username AND password
+        // Query database for stored hash and salt for the given username
         Cursor cursor = db.rawQuery(
-                "SELECT * FROM users WHERE username = ? AND password = ?",
-                new String[]{username, password}
+                "SELECT password, salt FROM users WHERE username = ?",
+                new String[]{username}
         );
 
-        // If cursor count > 0, credentials are valid
-        boolean exists = cursor.getCount() > 0;
+        boolean isValid = false;
 
-        // Close cursor after use
+        if (cursor.moveToFirst()) {
+            int passwordIndex = cursor.getColumnIndex("password");
+            int saltIndex = cursor.getColumnIndex("salt");
+
+            if (passwordIndex != -1 && saltIndex != -1) {
+                String storedHashHex = cursor.getString(passwordIndex);
+                String storedSaltHex = cursor.getString(saltIndex);
+
+                // Verify the password using PBKDF2-HMAC-SHA512
+                isValid = PasswordUtils.verifyPassword(password, storedHashHex, storedSaltHex);
+            }
+        }
+
+        // Closing the cursor
         cursor.close();
 
-        return exists;
+        return isValid;
     }
 }
