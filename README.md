@@ -20,7 +20,7 @@ I am a Corporate Pilot and Flight Instructor completing a Bachelor's Degree in C
 | **Databases** | [View Database Enhancement](./util/PasswordUtils.java) |
 
 ### Upcoming Deliverables
-* [ ] Code Review Walkthrough Video
+- [ ] [Code Review Walkthrough Video](https://www.youtube.com/watch?v=_BqwQQWFwVU)
 * [ ] Artifact Enhancement Narratives
 * [ ] Professional Self-Assessment
 
