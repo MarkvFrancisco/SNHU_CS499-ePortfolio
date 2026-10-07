@@ -19,10 +19,13 @@ I am a Corporate Pilot and Flight Instructor completing a Bachelor's Degree in C
 | **Algorithms & Data Structures** | [View Priority Queue Enhancement](./controller/EventController.java) |
 | **Databases** | [View Database Enhancement](./util/PasswordUtils.java) |
 
-### Upcoming Deliverables
+### Deliverables
 - [ ] [Code Review Walkthrough Video](https://www.youtube.com/watch?v=_BqwQQWFwVU)
-* [ ] Artifact Enhancement Narratives
-* [ ] Professional Self-Assessment
+- [ ] Artifact Enhancement Narratives
+  - [📄 Software Engineering Narrative](./CS_499_Narratives/Enhancement%20One_%20Software%20Design%20and%20Engineering%20-%20Google%20Docs.pdf)
+  - [📄 Algorithms & Data Structures Narrative](./CS_499_Narratives/Enhancement%20Two_%20Algorithms%20and%20Data%20Structure%20-%20Google%20Docs.pdf)
+  - [📄 Database Narrative](./CS_499_Narratives/Enhancement%20Three_%20Databases%20-%20Google%20Docs.pdf)
+- [ ] Professional Self-Assessment
 
 ---
 <p align="center">
