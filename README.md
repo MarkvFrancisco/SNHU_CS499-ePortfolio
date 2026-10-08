@@ -15,7 +15,7 @@ I am a Corporate Pilot and Flight Instructor completing a Bachelor's Degree in C
 
 | Category  | Links |
 | :--- | :---: |
-| **Software Engineering** | [View Refactored MVC Code](./controller/) |
+| **Software Design & Engineering** | [View Refactored MVC Code](./controller/) |
 | **Algorithms & Data Structures** | [View Priority Queue Enhancement](./controller/EventController.java) |
 | **Databases** | [View Database Enhancement](./util/PasswordUtils.java) |
 
