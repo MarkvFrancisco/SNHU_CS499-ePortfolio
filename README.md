@@ -15,7 +15,7 @@ I am a Pilot and Flight Instructor completing a Bachelor's Degree in Computer Sc
 
 | Category  | Links |
 | :--- | :---: |
-| **Software Design & Engineering** | [View Refactored MVC Code](https://github.com/MarkvFrancisco/CS499-ePortfolio/tree/main/app/src/main/java/com/example/eventapp/controller) |
+| **Software Design & Engineering** | [View Refactored MVC Code & Input Validation](./controller) |
 | **Algorithms & Data Structures** | [View Priority Queue Enhancement](./controller/EventController.java) |
 | **Databases** | [View Database Enhancement](./util/PasswordUtils.java) |
 
