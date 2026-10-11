@@ -15,7 +15,7 @@ I am a Pilot and Flight Instructor completing a Bachelor's Degree in Computer Sc
 
 | Category  | Links |
 | :--- | :---: |
-| **Software Design & Engineering** | [View Refactored MVC Code & Input Validation](./controller) |
+| **Software Design & Engineering** | [View MVC Architecture Directory](./controller) <br> • [View Input Validation in EventController.java](./controller/EventController.java) |
 | **Algorithms & Data Structures** | [View Priority Queue Enhancement](./controller/EventController.java) |
 | **Databases** | [View Database Enhancement](./util/PasswordUtils.java) |
 
