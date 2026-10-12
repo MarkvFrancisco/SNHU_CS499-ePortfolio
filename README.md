@@ -15,7 +15,7 @@ I am a Pilot and Flight Instructor completing a Bachelor's Degree in Computer Sc
 
 | Category  | Links |
 | :--- | :---: |
-| **Software Design & Engineering** | [View MVC Architecture Directory](./controller) <br> [View Input Validation in EventController.java](./controller/EventController.java) |
+| **Software Design & Engineering** | [View MVC Architecture Directory](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/tree/main/controller) <br> [View Input Validation in EventController.java](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/blob/main/controller/EventController.java) |
 | **Algorithms & Data Structures** | [View Priority Queue Enhancement](./controller/EventController.java) |
 | **Databases** | [View Database Enhancement](./util/PasswordUtils.java) |
 
