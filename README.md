@@ -1,11 +1,11 @@
 # Mark Vincent Francisco
 
-> **Professional Pilot & Flight Instructor** | **Future Software Engineer** | **SNHU CS CAPSTONE**
+> **Professional Pilot & Flight Instructor** | **Future Software Engineer** | **SNHU Computer Science Capstone**
 
 ---
 
 ## My Software Developer ePortfolio
-I am a Professional Pilot & Flight Instructor completing a Bachelor's Degree in Computer Science with a concentration in Software Engineering at Southern New Hampshire University. This ePortfolio will iteratively showcase improvements on an Android mobile application that I have worked on throughout this course in the following areas: 
+I am a Professional Pilot & Flight Instructor completing a Bachelor's Degree in Computer Science with a concentration in Software Engineering at Southern New Hampshire University. This ePortfolio will iteratively showcase improvements on an Event Planning mobile application on Android that I have worked on throughout this course in the following areas: 
 
 * **MVC Software Design Pattern**
 * **User Input Validation**
