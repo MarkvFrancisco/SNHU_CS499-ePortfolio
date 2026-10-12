@@ -26,10 +26,10 @@ I am a Professional Pilot & Flight Instructor completing a Bachelor's Degree in 
 - [x] Artifact Enhancement Narratives
   - [📄 Software Engineering Narrative](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/raw/main/CS_499_Narratives_%26_Professional_Self_Assessment/Enhancement%20One_%20Software%20Design%20and%20Engineering%20-%20Google%20Docs.pdf)
   - [📄 Algorithms & Data Structures Narrative](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/raw/main/CS_499_Narratives_%26_Professional_Self_Assessment/Enhancement%20Two_%20Algorithms%20and%20Data%20Structure%20-%20Google%20Docs.pdf)
-  - [📄 Database Narrative](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/raw/main/CS_499_Narratives_%26_Professional_Self_Assessment/Enhancement%20Three_%20Databases%20-%20Google%20Docs.pdf)
+  - [📄 Databases Narrative](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/raw/main/CS_499_Narratives_%26_Professional_Self_Assessment/Enhancement%20Three_%20Databases%20-%20Google%20Docs.pdf)
   - [📄 Professional Self-Assessment](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/raw/main/CS_499_Narratives_%26_Professional_Self_Assessment/CS_499_Professional%20Self-Assessment%20-%20Google%20Docs.pdf)
 
 ---
 <p align="center">
-  <sub>© 2026 Mark Vincent Francisco · BS in Computer Science · Hosted via GitHub Pages</sub>
+  <sub>© 2026 Mark Vincent Francisco · Bachelor's of Science in Computer Science · Hosted via GitHub Pages</sub>
 </p>
