@@ -5,27 +5,29 @@
 ---
 
 ## My Software Developer ePortfolio
-I am a Pilot and Flight Instructor completing a Bachelor's Degree in Computer Science with a concentration in Software Engineering at Southern New Hampshire University. This ePortfolio will iteratively showcase improvements on projects that I have worked on throughout this program in the following areas: 
+I am a Professional Pilot & Flight Instructor completing a Bachelor's Degree in Computer Science with a concentration in Software Engineering at Southern New Hampshire University. This ePortfolio will iteratively showcase improvements on an Android mobile application that I have worked on throughout this course in the following areas: 
 
-* **Time and Space Complexity**
+* **MVC Software Design Pattern**
+* **User Input Validation**
 * **Software Design Skills**
-* **Writing Secure Code**
+* **Optimizing Time and Space Complexity**
+* **Writing Secure Code by using a Cryptographic Algorithm (PBKDF2)**
 
-### Capstone Artifacts for Each of the Three Categories
+### Capstone Artifact Addressing Each of the Three Categories
 
-| Category  | Links |
+| Category | Links |
 | :--- | :---: |
 | **Software Design & Engineering** | [View MVC Architecture Directory](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/tree/main/controller) <br> [View Input Validation in EventController.java](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/blob/main/controller/EventController.java) |
-| **Algorithms & Data Structures** | [View Priority Queue Enhancement](./controller/EventController.java) |
-| **Databases** | [View Database Enhancement](./util/PasswordUtils.java) |
+| **Algorithms & Data Structures** | [View Priority Queue Enhancement](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/blob/main/controller/EventController.java) |
+| **Databases** | [View Database Enhancement](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/blob/main/util/PasswordUtils.java) |
 
 ### Deliverables
-- [ ] [Code Review Walkthrough Video](https://www.youtube.com/watch?v=_BqwQQWFwVU)
-- [ ] Artifact Enhancement Narratives
-  - [📄 Software Engineering Narrative](./CS_499_Narratives_&_Professional_Self_Assessment/Enhancement%20One_%20Software%20Design%20and%20Engineering%20-%20Google%20Docs.pdf)
-  - [📄 Algorithms & Data Structures Narrative](./CS_499_Narratives_&_Professional_Self_Assessment/Enhancement%20Two_%20Algorithms%20and%20Data%20Structure%20-%20Google%20Docs.pdf)
-  - [📄 Database Narrative](./CS_499_Narratives_%26_Professional_Self_Assessment/Enhancement%20Three_%20Databases%20-%20Google%20Docs.pdf)
-  - [📄 Professional Self-Assessment](./CS_499_Narratives_%26_Professional_Self_Assessment/CS_499_Professional%20Self-Assessment%20-%20Google%20Docs.pdf)
+- [x] [Code Review Walkthrough Video](https://www.youtube.com/watch?v=_BqwQQWFwVU)
+- [x] Artifact Enhancement Narratives
+  - [📄 Software Engineering Narrative](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/raw/main/CS_499_Narratives_%26_Professional_Self_Assessment/Enhancement%20One_%20Software%20Design%20and%20Engineering%20-%20Google%20Docs.pdf)
+  - [📄 Algorithms & Data Structures Narrative](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/raw/main/CS_499_Narratives_%26_Professional_Self_Assessment/Enhancement%20Two_%20Algorithms%20and%20Data%20Structure%20-%20Google%20Docs.pdf)
+  - [📄 Database Narrative](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/raw/main/CS_499_Narratives_%26_Professional_Self_Assessment/Enhancement%20Three_%20Databases%20-%20Google%20Docs.pdf)
+  - [📄 Professional Self-Assessment](https://github.com/MarkvFrancisco/SNHU_CS499-ePortfolio/raw/main/CS_499_Narratives_%26_Professional_Self_Assessment/CS_499_Professional%20Self-Assessment%20-%20Google%20Docs.pdf)
 
 ---
 <p align="center">
