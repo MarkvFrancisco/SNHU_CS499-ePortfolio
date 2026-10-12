@@ -24,7 +24,7 @@ I am a Pilot and Flight Instructor completing a Bachelor's Degree in Computer Sc
 - [ ] Artifact Enhancement Narratives
   - [📄 Software Engineering Narrative](./CS_499_Narratives_&_Professional_Self_Assessment/Enhancement%20One_%20Software%20Design%20and%20Engineering%20-%20Google%20Docs.pdf)
   - [📄 Algorithms & Data Structures Narrative](./CS_499_Narratives_&_Professional_Self_Assessment/Enhancement%20Two_%20Algorithms%20and%20Data%20Structure%20-%20Google%20Docs.pdf)
-  - [📄 Database Narrative](./CS_499_Narratives/Enhancement%20Three_%20Databases%20-%20Google%20Docs.pdf)
+  - [📄 Database Narrative](./CS_499_Narratives_%26_Professional_Self_Assessment/Enhancement%20Three_%20Databases%20-%20Google%20Docs.pdf)
   - [📄 Professional Self-Assessment](./CS_499_Narratives_%26_Professional_Self_Assessment/CS_499_Professional%20Self-Assessment%20-%20Google%20Docs.pdf)
 
 ---
